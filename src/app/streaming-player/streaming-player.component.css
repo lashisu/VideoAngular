@@ -1,0 +1,11 @@
+vg-player{
+    margin:20px;
+    width:500px;
+    height: 500px;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0;
+}

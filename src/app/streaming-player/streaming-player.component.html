@@ -1,0 +1,19 @@
+<vg-player (onPlayerReady)="onPlayerReady($event)">
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+    <vg-controls>
+        <vg-play-pause></vg-play-pause>
+        <vg-volume></vg-volume>
+        <vg-mute></vg-mute>
+        <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+        </vg-scrub-bar>
+        <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+        <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+        <vg-track-selector></vg-track-selector>
+        <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+    <video #media [vgMedia]="media" [vgHls]="currentStream" id="singleVideo" crossorigin>
+    </video>
+</vg-player>
